@@ -1,6 +1,8 @@
 window.addEventListener('scroll', ()=>{
    let title = document.getElementById("checkTitle")
-   let scroll = window.scrollY+400
-   console.log(scroll)
-   title.style.cssText =`top: ${scroll*0.25}px`
+
+   let deltaTime = 0.249
+   let scroll = Math.round(window.scrollY)* deltaTime +(window.innerHeight/4)/3
+   
+   title.style.cssText =`top: ${scroll}px`
 })

@@ -8,17 +8,18 @@ html{
    line-height: 1.25;
    
    scroll-behavior: smooth;
-   scrollbar-width: 30px;
 
    font-family: 'Poppins', sans-serif;
    font-weight: 500;
 }
-html::-webkit-scrollbar-track{
-   background-color: rgb(196, 24, 24);
-   border-radius: 10rem;
-}
-html::-webkit-scrollbar-thumb{
-   background: #ff0f0f;
+
+::-webkit-scrollbar {
+   width: 0.6rem;
+ }
+::-webkit-scrollbar-thumb {
+   position: relative;
+   background: rgb(146, 146, 146); 
+   border-radius: 1rem;
 }
 
 main{
@@ -26,7 +27,6 @@ main{
 
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
    align-items: center;
 }
 h1{
@@ -48,11 +48,12 @@ h1{
 }
 #checkTitle svg{
    font-weight: 400;
-   width: 44px;
-   height: 44px;
+   width: 40px;
+   height: 40px;
 }
 
 footer{
    margin: 2rem auto;
+   text-align: center;
    font-size: 2em;
 }
